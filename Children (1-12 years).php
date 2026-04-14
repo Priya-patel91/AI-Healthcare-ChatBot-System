@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children (1-12 years) - Healthcare Advisory</title>
+    <style>
+        :root {
+            --bg1: #f2f9ff;
+            --bg2: #e8f7ff;
+            --accent: #4c6ef5;
+            --accent-soft: rgba(76, 110, 245, 0.15);
+            --text: #1f2a44;
+            --card: rgba(255, 255, 255, 0.95);
+            --shadow: rgba(0, 0, 0, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(140deg, var(--bg1), var(--bg2));
+            color: var(--text);
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 1rem 2rem;
+            background: linear-gradient(135deg, #4c6ef5, #d0bfff);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: clamp(2rem, 5vw, 3rem);
+            letter-spacing: 0.02em;
+            color: white;
+        }
+
+        header p {
+            max-width: 720px;
+            margin: 1rem auto 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+            color: rgba(255,255,255,0.9);
+        }
+
+        nav {
+            margin: 2rem auto 0;
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: 0 1rem;
+        }
+
+        nav a {
+            padding: 0.7rem 1.2rem;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.85);
+            color: var(--text);
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            transition: transform 0.25s ease, background 0.25s ease;
+        }
+
+        nav a:hover {
+            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 1);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 2.5rem auto 3rem;
+            padding: 0 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.75rem;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 22px;
+            padding: 1.75rem;
+            box-shadow: 0 10px 30px var(--shadow);
+            border: 1px solid rgba(255,255,255,0.7);
+            position: relative;
+            overflow: hidden;
+            min-height: 260px;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            right: -40px;
+            width: 120px;
+            height: 120px;
+            background: rgba(76, 110, 245, 0.18);
+            border-radius: 50%;
+            filter: blur(12px);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.45rem;
+            color: #2d2f4d;
+        }
+
+        .card p {
+            margin: 0.85rem 0 1.2rem;
+            line-height: 1.6;
+        }
+
+        .card ul {
+            padding-left: 1.15rem;
+            line-height: 1.6;
+        }
+
+        .card li {
+            margin-bottom: 0.75rem;
+        }
+
+        .highlight {
+            background: var(--accent-soft);
+            border-left: 4px solid var(--accent);
+            padding: 1rem 1.1rem;
+            border-radius: 14px;
+            margin: 1.5rem 0;
+        }
+
+        .highlight h3 {
+            margin: 0 0 0.6rem;
+            color: #3b3e68;
+        }
+
+        .hero-img {
+            display: block;
+            max-width: 480px;
+            width: 100%;
+            margin: 1.5rem auto 0;
+            border-radius: 24px;
+            box-shadow: 0 18px 30px rgba(0,0,0,0.15);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: rgba(255, 255, 255, 0.7);
+            border-top: 1px solid rgba(0,0,0,0.08);
+        }
+
+        footer p {
+            margin: 0;
+            color: rgba(0,0,0,0.65);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 640px) {
+            header {
+                clip-path: none;
+                border-radius: 0 0 30px 30px;
+            }
+
+            .card::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Children (1-12 years)</h1>
+    <p>Simple, playful guidance for growing kids — activity, nutrition, learning, and safety.</p>
+</header>
+
+<nav>
+    <a href="index.php">🏠 Home</a>
+</nav>
+
+<main>
+    <div class="card">
+        <h2>Healthy Growth & Nutrition</h2>
+        <p>Good food fuels growing bodies and brains. Focus on balanced meals, fun snacks, and keeping hydration as a habit.</p>
+        <ul>
+            <li>Offer a rainbow of fruits and vegetables across the week.</li>
+            <li>Choose whole grains like oats, brown rice, and whole wheat bread.</li>
+            <li>Include lean proteins such as eggs, beans, fish, and chicken in meals.</li>
+            <li>Make healthy snacks easy: cut fruit, yogurt, nuts, and carrot sticks.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Active Play & Movement</h2>
+        <p>Kids need play — it builds strength, coordination and confidence. Aim for at least 60 minutes of activity every day.</p>
+        <ul>
+            <li>Mix in running, jumping, climbing, and games that get the heart pumping.</li>
+            <li>Use active chores and family adventures (bike rides, park time) as movement moments.</li>
+            <li>Limit screen time by offering creative alternatives like crafts, puzzles, or backyard play.</li>
+        </ul>
+
+        <div class="highlight">
+            <h3>Screen Time Tip</h3>
+            <p>Use a timer: after 30 minutes of screen use, take a 10-minute movement break to keep energy healthy.</p>
+        </div>
+
+        <img class="hero-img" src="https://via.placeholder.com/480x320?text=Active+Kids" alt="Children being active">    
+    </div>
+
+    <div class="card">
+        <h2>Learning & Emotional Growth</h2>
+        <p>Emotions and learning skills grow together. Help children understand feelings and build positive routines.</p>
+        <ul>
+            <li>Encourage curiosity with questions, reading, and simple science experiments.</li>
+            <li>Teach emotion words (happy, frustrated, proud) to help them express themselves.
+            <li>Count successes: celebrate effort, not just perfect results.</li>
+        </ul>
+
+        <div class="highlight">
+            <h3>Back-to-School Reminder</h3>
+            <p>A consistent bedtime routine and a calm morning start set the tone for a great school day.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Safety & Daily Habits</h2>
+        <p>Build habits that keep children safe and healthy without taking the fun out of being a kid.</p>
+        <ul>
+            <li>Teach road safety: look both ways, hold hands near traffic, and wear helmets when biking.</li>
+            <li>Practice good hygiene: handwashing, covering coughs, and keeping personal items personal.</li>
+            <li>Make sleep a routine: same bedtime, calm pre-bedtime moments, and a cozy sleep environment.</li>
+        </ul>
+    </div>
+</main>
+
+<footer>
+    <p>⚠️ This information is general guidance. Please consult a pediatrician for personalized care.</p>
+</footer>
+
+</body>
+</html>
